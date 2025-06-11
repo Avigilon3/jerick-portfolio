@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jerick Tumamak | Portfolio</title>
+  <meta name="description" content="Jerick Tumamak's portfolio: Web developer, projects, and contact information.">
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Scroll Progress Bar -->
+  <div id="progress-bar"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="logo">Jerick Tumamak</a>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#repos">GitHub</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button id="dark-toggle" title="Toggle Dark Mode" aria-label="Toggle dark mode">🌓</button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="home" id="home">
+    <div class="container">
+      <h1>Hello, I'm <span class="highlight">Jerick!</span></h1>
+      <p class="subtitle">Aspiring Web Developer & Tech Enthusiast</p>
+      <a href="#projects" class="btn">View My Work</a><br/>
+      <a href="Jerick_Tumamak_Resume.pdf" class="resume-btn" download>Download Resume</a>
+
+      <!-- Social Links -->
+      <div class="social-links">
+        <a href="https://www.facebook.com/jeric.tumamak" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/jrcklmnop/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://github.com/Avigilon3" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/jerick-tumamak-29b3a8351/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:your-jericktumamak8@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="about" data-aos="fade-up">
+    <div class="container">
+      <h2>About Me</h2>
+      <button class="about-toggle btn" onclick="toggleAboutDetails()">Show Details</button>
+
+      <div id="about-details" class="hidden">
+        <img src = "image/jerick.png" alt="Jerick Tumamak" class="profile-image">
+        <p>
+          I'm Jerick Tumamak, a passionate individual with a heart in everything I do. I'm currently studying Information Technology and always eager to learn new skills and technologies to improve my craft.
+        </p>
+        <h3>Education</h3>
+        <ul>
+          <li><strong>Certificate in Computer Science</strong><br>Pateros Technological College — 2021–2025</li>
+        </ul>
+
+        <h3>Skills</h3>
+        <ul>
+          <li>💻 Programming Languages: Basic knowledge of PHP, Java</li>
+          <li>🛠️ Web Development: Familiar with HTML, CSS, JavaScript, PHP</li>
+          <li>🎯 Database Management: Basic experience with MySQL, MariaDB</li>
+          <li>📚 Version Control: Familiar with GitHub</li>
+          <li>🌐 UI/UX Design for Web: Familiar with Bootstrap and CSS</li>
+        </ul>
+
+        <h3>Certifications</h3>
+        <ul>
+          <li>NC2 Certificate in Computer System and Services CSSNC2</li>
+        </ul>
+
+        <h3>Interests</h3>
+        <p>Outside of tech, I enjoy cycling, playing the guitar, and volunteering in my community. These activities fuel my creativity and help me stay grounded.</p>
+
+        <h3>My Mission</h3>
+        <p>To build intuitive and impactful web applications that help others and improve their experiences online.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects" data-aos="fade-up">
+    <div class="container">
+      <h2>Projects</h2>
+
+      <div class="project">
+        <h3>Grading_app : prototype Student grading system portal</h3>
+        <p>A PHP and MariaDB project to manage student grades efficiently.</p>
+        <a href="https://github.com/Avigilon3/grading_app" target="_blank">GitHub Repo</a>
+      </div>
+
+      <div class="project">
+        <h3>Triviamo Mini quiz game</h3>
+        <p>A Java project that serves as a mini game to test your knowledge.</p>
+        <a href="https://github.com/Avigilon3/FInals-Triviamo" target="_blank">GitHub Repo</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- GitHub Repo Section -->
+  <section id="repos" class="projects" data-aos="fade-up">
+    <div class="container">
+      <h2>My GitHub Repositories</h2>
+      <p>Explore more of my work on GitHub:</p>
+      <a class="btn" href="https://github.com/Avigilon3" target="_blank">Visit My GitHub</a>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact" data-aos="fade-up">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>You can reach me via this form:</p>
+      <form action="https://formspree.io/f/your-form-id" method="POST">
+        <label for="name">Name</label>
+        <input id="name" type="text" name="name" placeholder="Your name" required />
+        <label for="email">Email</label>
+        <input id="email" type="email" name="email" placeholder="Your email" required />
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Your message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Tumamak Jerick. All rights reserved.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+
+    // Scroll progress bar
+    window.addEventListener('scroll', () => {
+      const scrollTop = window.scrollY;
+      const docHeight = document.body.scrollHeight - window.innerHeight;
+      const progress = (scrollTop / docHeight) * 100;
+      document.getElementById('progress-bar').style.width = `${progress}%`;
+    });
+
+    // Dark mode toggle with localStorage
+    const toggleBtn = document.getElementById('dark-toggle');
+    function setDarkMode(enabled) {
+      if (enabled) {
+        document.body.classList.add('dark-mode');
+        localStorage.setItem('darkMode', 'enabled');
+      } else {
+        document.body.classList.remove('dark-mode');
+        localStorage.setItem('darkMode', 'disabled');
+      }
+    }
+    // On load, set dark mode if previously enabled
+    if (localStorage.getItem('darkMode') === 'enabled') {
+      document.body.classList.add('dark-mode');
+    }
+    toggleBtn.addEventListener('click', () => {
+      const enabled = !document.body.classList.contains('dark-mode');
+      setDarkMode(enabled);
+    });
+
+    // Toggle About Details
+    function toggleAboutDetails() {
+      const details = document.getElementById('about-details');
+      const button = document.querySelector('.about-toggle');
+      if (details.classList.contains('hidden')) {
+        details.classList.remove('hidden');
+        button.textContent = "Hide Details";
+      } else {
+        details.classList.add('hidden');
+        button.textContent = "Show Details";
+      }
+    }
+  </script>
+</body>
+</html>
